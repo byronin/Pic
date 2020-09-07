@@ -13,18 +13,18 @@
 *                                       *                         * 
 *                                       *                         * 
 *                                       *                         * 
-*            GP5/T1CKI/OSC1/CLKIN   *****                    DAT  *****   GP0/CIN+/ICSPDAT
+*  Button----GP5/T1CKI/OSC1/CLKIN   *****                    DAT  *****   GP0/CIN+/ICSPDAT
 *                                       *                         * 
 *                                       *        PIC12F629        * 
 *                 ___                   *                         * 
 *             GP4/T1G/OSC2/CLKOUT   *****                    CLK  *****   GP1/CIN-/ICSPCLK
-*                                       *                         * 
-*                                       *                         * 
-*                                       *                         * 
-*                    GP3/MCLR/VPP   ***** MCLR/RST                *****   GP2/T0CKI/INT/COUT
-*                                       *                         * 
-*                                        * * * * * * * * * * * * * 
-PIC12F629*/
+*                                       *                         *                                *         *
+*                                       *                         *                                *   *     *
+*                                       *                         *                                *      *  *
+*                    GP3/MCLR/VPP   ***** MCLR/RST                *****   GP2/T0CKI/INT/COUT-------*  LED    * --------- 1K resistor to ground. 
+*                                       *                         *                                *      *  *
+*                                        * * * * * * * * * * * * *                                 *   *     *
+PIC12F629                                                                                          *         *                            */                           
 
 
 #pragma config FOSC = INTRCCLK   // Oscillator Selection bits (INTOSC oscillator: CLKOUT function on GP4/OSC2/CLKOUT pin, I/O function on GP5/OSC1/CLKIN)
