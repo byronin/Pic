@@ -1,3 +1,3 @@
 # Pic
 Microchip Pic MCU's Test &amp; Project Examples
-Mplab Xc8
+with Mplab Xc8
