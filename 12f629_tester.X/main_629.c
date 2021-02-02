@@ -33,7 +33,7 @@ PIC12F629                                                                       
 #pragma config MCLRE = OFF      // GP3/MCLR pin function select (GP3/MCLR pin function is MCLR)
 #pragma config BOREN = ON       // Brown-out Detect Enable bit (BOD enabled)
 #pragma config CP = OFF         // Code Protection bit (Program Memory code protection is disabled)
-#pragma config CPD = OFF        // Data Code Protection bit (Data memory code protection is disabled)
+#pragma config CPD = OFF        // .Data Code Protection bit (Data memory code protection is disabled)
 
 
 // #pragma config statements should precede project file includes.
